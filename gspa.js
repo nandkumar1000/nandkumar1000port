@@ -3,19 +3,19 @@
 // gsap.registerPlugin(ScrollTrigger);
 
 // // Animate the nav__menu when the page scrolls
-// gsap.from(".nav__menu", {
-//   y: -100,               // Start from above the viewport
-//   opacity: 0,            // Start invisible
-//   duration: 0.5,         // Animation duration
-//   ease: "power1.out",    // Smooth easing
-//   scrollTrigger: {
-//     trigger: ".landing-page",   // Element triggering the animation
-//     start: "top top",           // Animation starts when the top of landing-page hits top of the viewport
-//     end: "bottom top",          // Animation ends when the bottom of the section reaches the top of the viewport
-//     toggleActions: "play none none none",  // Play animation on scroll, no resets
-//     scrub: 1                    // Smooth scrolling animation
-//   }
-// });
+// // gsap.from(".nav__menu", {
+// //   y: -100,               // Start from above the viewport
+// //   opacity: 0,            // Start invisible
+// //   duration: 0.5,         // Animation duration
+// //   ease: "power1.out",    // Smooth easing
+// //   scrollTrigger: {
+// //     trigger: ".landing-page",   // Element triggering the animation
+// //     start: "top top",           // Animation starts when the top of landing-page hits top of the viewport
+// //     end: "bottom top",          // Animation ends when the bottom of the section reaches the top of the viewport
+// //     toggleActions: "play none none none",  // Play animation on scroll, no resets
+// //     scrub: 1                    // Smooth scrolling animation
+// //   }
+// // });
 
 // // Animating social media links
 // gsap.from(".home-sci a", {
