@@ -433,6 +433,11 @@ body {
 .landing-page {
   position: relative;
   display: block;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 960px;
 }
 
 
@@ -466,6 +471,7 @@ nav {
 
   .section {
     padding-top: 7rem;
+    max-width: 1600px;
   }
 
   .l-header {
@@ -1156,7 +1162,7 @@ span {
   height: auto;
   position: relative;
   /* min-height: 2118px; */
-  max-width: 1519px;
+  max-width: 1598px;
 }
 
 .heading {
@@ -1651,7 +1657,7 @@ span {
   }
 }
 
-@media(max-width:1248px) {
+@media(max-width:1250px) {
   .horiz4 {
     width: 26%;
     top: 1395px;
@@ -1665,12 +1671,12 @@ span {
   }
 
   .l4 {
-    top: 1230px;
+    top: 1330px;
 
   }
 
   .l5 {
-    top: 1634px;
+    top: 1754px;
   }
 }
 
