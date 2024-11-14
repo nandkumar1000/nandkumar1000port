@@ -2185,14 +2185,15 @@ span {
 }
 
 .swiper {
-  width: 80%;
+  width: 60%;
   height: 50%;
 }
 
 .swiper-slide {
+  margin-block: 30px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2200,7 +2201,7 @@ span {
 
 .swiper-slide img {
   display: block;
-  width: 60%;
+  width: 80%;
   height: 50%;
   object-fit: cover;
   margin: 0 auto;
