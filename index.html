@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -22,8 +24,6 @@
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
   <!-- Load GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <!-- Load SplitType -->
-  <script src="https://unpkg.com/split-type"></script>
   <!-- Typed.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <!-- for emailjs -->
@@ -657,48 +657,42 @@
           <h1>bhartiya antariksh</h1>
         </div>
       </div>
-      <div class="slider-wrapper">
-        <button class="prev" onclick="slideLeft()">&#10094;</button>
-
-        <div class="certificates">
-          <div class="certificate">
-            <img src="/image/nptelc.jpeg" alt="C Language Certificate" loading="lazy">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/image/nptelc.jpeg" alt="C Language Certificate" loading="lazy">
             <h1>NPTEL C by IIT Kharagpur</h1>
           </div>
-          <div class="certificate">
-            <img src="/image/ctraninigiitbombay.png" alt="C training by IIT bombay" loading="lazy">
+          <div class="swiper-slide"><img src="/image/ctraninigiitbombay.png" alt="C training by IIT bombay"
+              loading="lazy">
             <h1>C training by IIT bombay</h1>
           </div>
-          <div class="certificate">
-            <img src="/image/cpptranining.png" alt="Cpp training by IIT bombay" loading="lazy">
+          <div class="swiper-slide"><img src="/image/cpptranining.png" alt="Cpp training by IIT bombay" loading="lazy">
             <h1>Cpp training by IIT bombay</h1>
           </div>
-          <div class="certificate">
-            <img src="/image/htmlcertificate.png" alt="HTML training by IIT bombay" loading="lazy">
+          <div class="swiper-slide"><img src="/image/htmlcertificate.png" alt="HTML training by IIT bombay"
+              loading="lazy">
             <h1>HTML training by IIT bombay</h1>
           </div>
-          <div class="certificate">
-            <img src="/image/python.png" alt="Python Certificate" loading="lazy">
+          <div class="swiper-slide"><img src="/image/python.png" alt="Python Certificate" loading="lazy">
             <h1>NPTEL Python by IIT Madras</h1>
           </div>
-          <div class="certificate">
-            <img src="/image/learnandbuild.png" alt="Python Certificate" loading="lazy">
+          <div class="swiper-slide"><img src="/image/learnandbuild.png" alt="Python Certificate" loading="lazy">
             <h1>learn and build</h1>
           </div>
-          <div class="certificate">
-            <img src="/image/github.png" alt="git hub" loading="lazy">
+          <div class="swiper-slide"><img src="/image/github.png" alt="git hub" loading="lazy">
             <h1>Git Hub</h1>
           </div>
-          <div class="certificate">
-            <img src="/image/tcs.png" alt="Tcs iqn" loading="lazy">
+          <div class="swiper-slide"><img src="/image/tcs.png" alt="Tcs iqn" loading="lazy">
             <h1>TCS iQN</h1>
           </div>
-          <div class="certificate">
-            <img src="/image/leadership.png" alt="LEADERSHIP" loading="lazy">
+          <div class="swiper-slide"><img src="/image/leadership.png" alt="LEADERSHIP" loading="lazy">
             <h1>Leadership Foundation</h1>
           </div>
         </div>
-        <button class="next" onclick="slideRight()">&#10095;</button>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- contact -->
@@ -774,6 +768,25 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="gspa.js"></script>
   <script src="script.js" async></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
   <script>
     // Typed.js Animation for "Passionate"
     var typed = new Typed('#element', {

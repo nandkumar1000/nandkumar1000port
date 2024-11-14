@@ -2170,81 +2170,40 @@ span {
   margin-top: 10px;
 }
 
-/* Slider Section */
-.slider-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.certification {
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 980px;
-  margin: 0 auto;
+  height: 100%;
 }
 
-.certificates {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: calc(200px * 4);
+.certification {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
-.certificate {
-  position: relative;
+.swiper {
+  width: 80%;
+  height: 50%;
+}
+
+.swiper-slide {
   text-align: center;
-  flex: 0 0 100%;
-  margin: 0 10px;
-  padding: 10px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.certificate img {
-  max-width: 100%;
-  max-height: 350px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  transition: transform 0.4s ease;
-}
-
-.certificate img:hover {
-  transform: scale(1.3);
-  /* Image pop-up effect */
-}
-
-.certificate h1 {
-  font-size: 20px;
-  color: #333;
-  margin-top: 10px;
-}
-
-/* Slider Buttons */
-button.prev,
-button.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 10;
-}
-
-button.prev {
-  left: 0;
-}
-
-button.next {
-  right: 0;
-}
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.swiper-slide img {
+  display: block;
+  width: 60%;
+  height: 50%;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 /* Responsive Design */

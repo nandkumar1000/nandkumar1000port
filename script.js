@@ -47,31 +47,6 @@ document.getElementById('about-btn').addEventListener('click', function () {
   this.classList.add('active');
   document.getElementById('specialization-btn').classList.remove('active');
 });
-let currentIndex = 0;
-function slideRight() {
-  const certificates = document.querySelector('.certificates');
-  const totalCertificates = certificates.children.length;
-
-  if (currentIndex < totalCertificates - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0;
-  }
-
-  certificates.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-function slideLeft() {
-  const certificates = document.querySelector('.certificates');
-  const totalCertificates = certificates.children.length;
-
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = totalCertificates - 1;
-  }
-
-  certificates.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
 // smooth scroling.
 function smoothScroll(target) {
   const element = document.querySelector(target);
