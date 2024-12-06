@@ -490,14 +490,43 @@ nav {
   }
 
   .nav__logo {
-    color: var(--navbar-color);
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    /* Use a modern font */
+    font-size: 2rem;
+    /* Adjust size as needed */
+    font-weight: bold;
+    color: #2a9d8f;
+    /* Choose a brand color */
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
   }
 
-  /* .nav__logo img {
-    height: 30px;
-    width: 30px;
-    border-color: rgba(0, 0, 0, 0.5);
+  .nav__logo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #e76f51;
+    /* Accent color */
+    transition: width 0.3s ease;
+  }
+
+  .nav__logo:hover::after {
+    width: 100%;
+  }
+
+  .nav__logo:hover {
+    color: #264653;
+    /* Change color on hover */
+  }
+
+  /* .nav__logo {
+    color: var(--navbar-color);
+    font-weight: 600;
   } */
 
   .nav__list {
